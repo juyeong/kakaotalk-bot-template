@@ -27,6 +27,7 @@ export interface IApi {
 
   unload(script: string): boolean;
 
+  // tslint:disable-next-line:adjacent-overload-signatures
   compile(script: string, hideToast: boolean): boolean;
 
   off(script?: string): boolean;
